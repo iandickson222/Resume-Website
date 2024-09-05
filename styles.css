@@ -1,0 +1,40 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  background: grey url("images/background.jpg");
+}
+#header{
+  text-align: center;
+  padding: 40px;
+}
+#header, #left-container, #right-container{
+  background-color: rgba(211, 211, 211, 0.9);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;    
+}
+img{
+  width: 100%;
+}
+ul{
+list-style: square inside;
+}
+h2, p, ul{
+  margin: 20px;
+}
+
+@media screen and (min-width: 750px){
+  .flex-container{
+    display: flex;
+  }
+  #left-container{
+    flex: 1;
+    margin: 0px 5px 10px 10px;
+  }
+  #right-container{
+    flex: 3;
+    margin: 0px 10px 10px 5px;
+  }
+}
